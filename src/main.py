@@ -5,7 +5,6 @@ from scanner.scanner_imagen import ImagenScanner
 from scanner.scanner_pdf import PDFScanner
 
 def guardar_texto(texto, tipo):
-    """Guarda el texto escaneado en un archivo dentro de la carpeta 'respuestas' en src."""
     nombre_carpeta = os.path.join(os.path.dirname(__file__), "respuestas")
     if not os.path.exists(nombre_carpeta):
         os.makedirs(nombre_carpeta)
@@ -36,7 +35,7 @@ def main():
 
                 scanned_text = image_scanner.escanear_imagen(imagen)
 
-                if scanned_text:
+                if scanned_text and scanned_text.strip():
                     guardar_texto(scanned_text, "imagen")
                 else:
                     print("\nNo se reconoció texto en la imagen. Intente con otra imagen o verifique la calidad.")
@@ -58,7 +57,7 @@ def main():
 
                 scanned_text = pdf_scanner.scan_pdf(ruta_pdf)
 
-                if scanned_text:
+                if scanned_text and scanned_text.strip():
                     guardar_texto(scanned_text, "PDF")
                 else:
                     print("\nNo se reconoció texto en el PDF. Intente con otro archivo o verifique la calidad.")

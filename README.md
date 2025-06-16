@@ -44,7 +44,7 @@ src/
 1. Clona el repositorio.
 2. Instala las dependencias necesarias:
    ```bash
-   pip install easyocr pdf2image
+   pip install easyocr opencv-python pdf2image numpy
    ```
    Además, instala [poppler](https://github.com/oschwartz10612/poppler-windows/releases/) para que `pdf2image` funcione en Windows.
 
@@ -64,4 +64,4 @@ Sigue las instrucciones en pantalla para seleccionar el tipo de archivo y la rut
 
 ## Licencia
 
-Este proyecto está bajo la Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.

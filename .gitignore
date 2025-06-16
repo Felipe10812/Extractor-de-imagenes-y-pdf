@@ -18,3 +18,4 @@ Thumbs.db
 
 # Archivos de documentación generados
 src/respuestas/
+*.jpg

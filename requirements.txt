@@ -1,10 +1,4 @@
-opencv-python
 easyocr
-Pillow
-PyPDF2
-numpy
-scikit-image
-tensorflow
-torch
-transformers
+opencv-python
 pdf2image
+numpy
